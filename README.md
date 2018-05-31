@@ -13,7 +13,7 @@ Sm4shCommand_plus
   - 開いたときのフォームの大きさを前回起動時のウィンドウサイズに設定。
 
 - **SALT**
-  -ACMD_INFO.csのラベリング用リストを、最新のSm4sh-ToolsのCMD_INFO.csのものに更新。Nightly版でデデデのgame.binが開けない問題も解決。
+   - ACMD_INFO.csのラベリング用リストを、最新のSm4sh-ToolsのCMD_INFO.csのものに更新。Nightly版でデデデのgame.binが開けない問題も解決。
   
 ## ビルド ##
   - Visual Studioで.slnファイルを開き、ビルドしてください。
