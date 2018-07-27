@@ -12,7 +12,7 @@ namespace Sm4shCommand.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.7.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -25,25 +25,37 @@ namespace Sm4shCommand.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100, 100")]
-        public global::System.Drawing.Point MyLocation {
+        [global::System.Configuration.DefaultSettingValueAttribute("Normal")]
+        public global::System.Windows.Forms.FormWindowState F1State {
             get {
-                return ((global::System.Drawing.Point)(this["MyLocation"]));
+                return ((global::System.Windows.Forms.FormWindowState)(this["F1State"]));
             }
             set {
-                this["MyLocation"] = value;
+                this["F1State"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("844, 580")]
-        public global::System.Drawing.Size MyClientSize {
+        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        public global::System.Drawing.Point F1Location {
             get {
-                return ((global::System.Drawing.Size)(this["MyClientSize"]));
+                return ((global::System.Drawing.Point)(this["F1Location"]));
             }
             set {
-                this["MyClientSize"] = value;
+                this["F1Location"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        public global::System.Drawing.Size F1Size {
+            get {
+                return ((global::System.Drawing.Size)(this["F1Size"]));
+            }
+            set {
+                this["F1Size"] = value;
             }
         }
     }

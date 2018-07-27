@@ -371,16 +371,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = global::Sm4shCommand.Properties.Settings.Default.MyClientSize;
+            this.ClientSize = new System.Drawing.Size(844, 580);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.pnlRight);
             this.Controls.Add(this.menuStrip1);
-            this.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::Sm4shCommand.Properties.Settings.Default, "MyLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.DataBindings.Add(new System.Windows.Forms.Binding("ClientSize", global::Sm4shCommand.Properties.Settings.Default, "MyClientSize", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Location = global::Sm4shCommand.Properties.Settings.Default.MyLocation;
+            this.Location = new System.Drawing.Point(100, 100);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AcmdMain";
             this.Text = "AnimCmd";

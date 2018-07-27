@@ -66,13 +66,49 @@ namespace Sm4shCommand
         }
 
         private void ACMDMain_Load(object sender, EventArgs e)
-        {
+        {// この設定は無くても良い
+            if (Properties.Settings.Default.F1Size.Width == 0) Properties.Settings.Default.Upgrade();
+            // もしC#デスクトップアプリをバージョンアップすると、記憶している情報が消え去るが、この↑を
+            // 入れておくと引き継がれる（らしい）。
+
+
+
+            if (Properties.Settings.Default.F1Size.Width == 0 || Properties.Settings.Default.F1Size.Height == 0)
+            {
+                // 初回起動時にはここに来るので必要なら初期値を与えても良い。
+                // 何も与えない場合には、デザイナーウインドウで指定されている大きさになる。
+            }
+            else
+            {
+                this.WindowState = Properties.Settings.Default.F1State;
+
+                // もし前回終了時に最小化されていても、今回起動時にはNormal状態にしておく
+                if (this.WindowState == FormWindowState.Minimized) this.WindowState = FormWindowState.Normal;
+
+                this.Location = Properties.Settings.Default.F1Location;
+                this.Size = Properties.Settings.Default.F1Size;
+            }
             GetCommandInfo(Path.Combine(Application.StartupPath, "Events.cfg"));
             if (!String.IsNullOrEmpty(Manager.WorkspaceRoot))
                 OpenWorkspace(Manager.WorkspaceRoot);
         }
         private void ACMDMain_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Properties.Settings.Default.F1State = this.WindowState;
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                // ウインドウステートがNormalな場合には位置（location）とサイズ（size）を記憶する。
+                Properties.Settings.Default.F1Location = this.Location;
+                Properties.Settings.Default.F1Size = this.Size;
+            }
+            else
+            {
+                // もし最小化（minimized）や最大化（maximized）の場合には、RestoreBoundsを記憶する。
+                Properties.Settings.Default.F1Location = this.RestoreBounds.Location;
+                Properties.Settings.Default.F1Size = this.RestoreBounds.Size;
+            }
+
+            // ここで設定を保存する
             Properties.Settings.Default.Save();
         }
 

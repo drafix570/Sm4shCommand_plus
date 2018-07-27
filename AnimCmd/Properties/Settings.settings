@@ -2,11 +2,14 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sm4shCommand.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="MyLocation" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">100, 100</Value>
+    <Setting Name="F1State" Type="System.Windows.Forms.FormWindowState" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
     </Setting>
-    <Setting Name="MyClientSize" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">844, 580</Value>
+    <Setting Name="F1Location" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="F1Size" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
     </Setting>
   </Settings>
 </SettingsFile>
