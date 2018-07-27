@@ -1,19 +1,20 @@
 Sm4shCommand_plus
 ===========
-���̃t�@�C���Z�b�g�̓\�[�X�R�[�h�ł��B�\�t�g�E�F�A���g�������l��release�^�u����Sm4shCommand_plus.zip���_�E�����[�h���Ă��������B
+このファイルセットはソースコードです。ソフトウェアを使いたい人はreleaseタブからSm4shCommand_plus.zipをダウンロードしてください。
 
 ## Requirements ##
 - .NET Framework 4.0
 - Visual Studio 2015
 
-## �ύX�_ ##
+## 変更点 ##
 - **Sm4shCommand**
-  - ParseAnimation�Ǎ��������̂��߂̃{�^���ƃR�}���h��ǉ��B
-  - Events.cfg�̒��g���폜���ASALT.dll�̓��e���㏑������Ȃ��悤�ɑ΍�B
-  - �J�����Ƃ��̃t�H�[���̑傫����O��N�����̃E�B���h�E�T�C�Y�ɐݒ�B
+  - ParseAnimation読込自動化のためのボタンとコマンドを追加。
+  - Events.cfgの中身を削除し、SALT.dllの内容が上書きされないように対策。
+  - 開いたときのフォームの大きさを前回起動時のウィンドウサイズに設定。（不安定だったのを修正しました）
 
 - **SALT**
-   - ACMD_INFO.cs�̃��x�����O�p���X�g���A�ŐV��Sm4sh-Tools��CMD_INFO.cs�̂��̂ɍX�V�BNightly�łŃf�f�f��game.bin���J���Ȃ����������B
+   - ACMD_INFO.csのラベリング用リストを、最新のSm4sh-ToolsのCMD_INFO.csのものに更新。Nightly版でデデデのgame.binが開けない問題も解決。
+   - 角度、リアクション値の10進整数表示に対応。Hitbox4種とThrow_specifierに適用。
   
-## �r���h ##
-  - Visual Studio��.sln�t�@�C�����J���A�r���h���Ă��������B
+## ビルド ##
+  - Visual Studioで.slnファイルを開き、ビルドしてください。
