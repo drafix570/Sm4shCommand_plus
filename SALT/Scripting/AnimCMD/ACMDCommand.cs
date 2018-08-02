@@ -13,11 +13,10 @@ namespace SALT.Scripting.AnimCMD
         {
             CRC = crc;
             Parameters = new List<object>();
-            Console.WriteLine(CRC); //18/5/31
         }
         public uint CRC { get; set; }
         public bool Dirty { get; set; }
-        
+
         public string Name { get { return ACMD_INFO.CMD_NAMES[CRC]; } }
         public int WordSize { get { return ACMD_INFO.CMD_SIZES[CRC]; } }
         public int[] ParamSpecifiers
